@@ -1,11 +1,11 @@
 Summary:	fontenc library
 Name:		xorg-libfontenc
-Version:	1.1.1
-Release:	3
+Version:	1.1.2
+Release:	1
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libfontenc-%{version}.tar.bz2
-# Source0-md5:	a2a861f142c3b4367f14fc14239fc1f7
+# Source0-md5:	ad2919764933e075bb0361ad5caa3d19
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
