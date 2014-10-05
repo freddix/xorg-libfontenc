@@ -1,7 +1,7 @@
 Summary:	fontenc library
 Name:		xorg-libfontenc
 Version:	1.1.2
-Release:	1
+Release:	2
 License:	MIT
 Group:		X11/Libraries
 Source0:	http://xorg.freedesktop.org/releases/individual/lib/libfontenc-%{version}.tar.bz2
@@ -53,6 +53,8 @@ rm -rf $RPM_BUILD_ROOT
 	DESTDIR=$RPM_BUILD_ROOT \
 	pkgconfigdir=%{_pkgconfigdir}
 
+%{__rm} $RPM_BUILD_ROOT%{_libdir}/*.la
+
 %clean
 rm -rf $RPM_BUILD_ROOT
 
@@ -68,7 +70,6 @@ rm -rf $RPM_BUILD_ROOT
 %files devel
 %defattr(644,root,root,755)
 %attr(755,root,root) %{_libdir}/libfontenc.so
-%{_libdir}/libfontenc.la
 %{_includedir}/X11/fonts/*.h
 %{_pkgconfigdir}/fontenc.pc
 
